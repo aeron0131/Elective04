@@ -1,14 +1,13 @@
 import os
 import sys
 
-# Add project root to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), '..')))
 
-from image_processing import acne_detector  # make sure your file is acne_detector.py
+from image_processing import acne_detector  
 
 
-INPUT_FOLDER = "input"   # folder containing real face images
-OUTPUT_FOLDER = "output"  # where processed images will be saved
+INPUT_FOLDER = "input" 
+OUTPUT_FOLDER = "output" 
 
 
 def test_input_folder_exists():
