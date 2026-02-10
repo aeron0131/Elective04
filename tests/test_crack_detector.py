@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(_file_), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from image_processing import acne_detector  
 
@@ -11,12 +11,10 @@ OUTPUT_FOLDER = "output"
 
 
 def test_input_folder_exists():
-    """Check if input folder exists"""
     assert os.path.exists(INPUT_FOLDER), "input folder is missing"
 
 
 def test_images_are_processed():
-    """Test that detect_acne processes all images successfully"""
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
     processed_any = False
@@ -32,7 +30,6 @@ def test_images_are_processed():
 
 
 def test_output_files_created():
-    """Check that output files are created"""
     for file in os.listdir(INPUT_FOLDER):
         if file.lower().endswith((".jpg", ".png", ".jpeg")):
             name = os.path.splitext(file)[0]
