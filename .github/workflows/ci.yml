@@ -5,6 +5,8 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'output/**'
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build-test-process:
