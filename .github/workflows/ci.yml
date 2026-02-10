@@ -4,14 +4,14 @@ on:
   push:
     branches: [ main ]
     paths-ignore:
-      - 'output/**'   # prevents infinite loop when CI commits output files
+      - 'output/**'
 
 jobs:
   build-test-process:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # allow CI to push back to repo
+      contents: write
 
     steps:
     - name: 📥 Checkout repository
