@@ -3,15 +3,14 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from image_processing import acne_detector  
+from image_processing import crack_detector
 
-
-INPUT_FOLDER = "input" 
-OUTPUT_FOLDER = "output" 
+INPUT_FOLDER = "input"
+OUTPUT_FOLDER = "output"
 
 
 def test_input_folder_exists():
-    assert os.path.exists(INPUT_FOLDER), "input folder is missing"
+    assert os.path.exists(INPUT_FOLDER), "input_images folder is missing"
 
 
 def test_images_are_processed():
@@ -23,15 +22,15 @@ def test_images_are_processed():
         if file.lower().endswith((".jpg", ".png", ".jpeg")):
             processed_any = True
             path = os.path.join(INPUT_FOLDER, file)
-            success = acne_detector.detect_acne(path, OUTPUT_FOLDER)
+            success = crack_detector.detect_cracks(path, OUTPUT_FOLDER)
             assert success is True, f"Processing failed for {file}"
 
-    assert processed_any, "No test images found in input folder"
+    assert processed_any, "No test images found in input_images folder"
 
 
 def test_output_files_created():
     for file in os.listdir(INPUT_FOLDER):
         if file.lower().endswith((".jpg", ".png", ".jpeg")):
             name = os.path.splitext(file)[0]
-            output_file = f"{OUTPUT_FOLDER}/{name}_acne.png"
-            assert os.path.exists(output_file), f"Output file not created: {output_file}"
+
+            assert os.path.exists(f"{OUTPUT_FOLDER}/{name}_edges.png")
