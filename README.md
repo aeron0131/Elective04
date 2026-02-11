@@ -1,144 +1,242 @@
-# Elective04
+# Elective04 — Automated Image Processing with CI (GitHub Actions)
 
-# Introduction
-Elective04 is a Python-based project that performs automated image analysis using multiple detection multiple computer vision techniques. The project integrates automated testing and a Continuous Integration (CI) pipeline using GitHub Actions.
+A Python-based project for automated image processing and analysis using modular computer vision techniques. The system reads images from an `input/` folder, applies selected processing modules, and writes the results to an `output/` folder—no manual configuration required.
 
-The project processes images placed inside the input directory and automatically generates transformed results inside the output directory. It demonstrates modular architecture, automated workflows, unit testing, CI/CD automation, and structured team collaboration using Git.
+This repository also demonstrates good engineering practices including unit testing with `pytest` and a Continuous Integration (CI) pipeline powered by GitHub Actions.
 
-# Functionality
-1.	Acne Detection – Detects and enhances acne-like features in facial images.
-2.	Crack Detection – Identifies and highlights crack patterns in structural images.
-3.	Dawn Enhancement – Applies edge detection and enhancement techniques.
-4.	Jigsaw Processing – Performs creative image manipulation effects.
+---
 
-Each module automatically reads from the input folder and saves processed outputs into the output folder without manual configuration.
+## Authors
 
-# Architecture Overview
+Prepared by: **Reingel F. Correa** — TODA president
 
-Main Components
-•	image_processing – processing modules
-•	input – raw images
-•	output – processed results
-•	tests – automated unit tests
-•	.github/workflows – CI pipeline configuration 
+---
 
-Workflow:
-•	Input Images
-•	Processing Modules
-•	Output Images
-•	Automated Tests
-•	CI Validation 
+## Features / Modules
 
-The repository is integrated with a GitHub CI pipeline that automatically runs tests, validates code execution, and ensures consistent builds to maintain project reliability.
+- **Acne Detection** — Detects and enhances acne-like features in facial images.
+- **Crack Detection** — Identifies and highlights crack patterns in structural/surface images.
+- **Dawn Enhancement** — Applies edge detection and enhancement for improved visual clarity.
+- **Jigsaw Effect** — Produces a creative jigsaw-style transformation.
 
-# Testing
-Each module has a corresponding pytest test file
-•	Run tests locally:
-    pytest
-
-Tests verify successful execution and output generation to ensure system reliability
-
-# Continuous Integration (CI Pipeline)
-
-This project uses GitHub Actions.
-
-The CI workflow is defined in:
-•	.github/workflows/ci.yml
-
-The workflow automatically triggers on:
-•	Every push
-•	Every pull request
-
-Pipeline Steps:
-1.	Set up Python
-2.	Install dependencies from requirements.txt
-3.	Install pytest
-4.	Run automated tests
-5.	Fail the build if tests fail
-
-This ensures automated validation and collaboration safety.
-
-# Installation & Setup
-
-Requirements:
-•	Python 3.9 or latest version
-•	Pip package Manager
-•	Git
-
-Installation:
-1.	Clone the repository: 
-      •	git clone https://github.com/<your-username>/Elective04.git
-      •	cd Elective04-main
-
-2.	Create a virtual environment
-      •	python -m venv venv
-
-3.	Activate the environment.
-      •	Windows: venv\Scripts\activate
-      •	Mac/Linux: source venv/bin/activate
-
-4.	Install dependencies
-      •	pip install -r requirements.txt
-
-5.	Running the Modules
-      •	python image_processing/acne_detector.py
-      •	python image_processing/crack_detector.py
-      •	python image_processing/dawn.py
-      •	python image_processing/jigsaw.py
-    
-    Processed images will automatically appear in the output/ directory.
-
-# Running Tests
-To execute automated tests locally:
-•	pytest
-
-# Installation (For Contributors)
-
-Development Setup
-1.	Fork the repository and clone your fork.
-2.	Clone your fork:
-      •	git clone https://github.com/<your-username>/Elective04.git
-      •	cd Elective04-main
-3.	Create a virtual environment
-      •	python -m venv venv
-      •	source venv/bin/activate   # Windows: venv\Scripts\activate
-4.	Install dependencies
-      •	pip install -r requirements.txt
-      •	pip install pytest
-5.	Commit and push changes.
-      •	git add .
-      •	git commit -m "feat: add new feature"
-      •	git push origin feature/your-feature-name
-
-# Collaboration & Git Workflow
-1.	Feature branches were used
-2.	Pull Requests before merging
-3.	Structured commit messages 
-4.	All members contributed to development, testing, CI, and documentation.  
+Each module:
+- Automatically reads images from `input/`
+- Saves processed outputs to `output/`
 
 
-# Authors
+---
 
-Mangahas, Romualdo Jr. N.  — **Programmer**
-****
+## Sample Images
 
-Lorenzo, Aeron Abigail R.  — **DevOps**
-**  **
+Add your sample images to `docs/images/` and the README will render them automatically on GitHub.
 
-Verueco, Joemar A.  — **QA**
-** **
+Recommended file names (you can change them—just update the paths below):
+- `docs/images/acne_input.jpg`, `docs/images/acne_output.jpg`
+- `docs/images/crack_input.jpg`, `docs/images/crack_output.jpg`
+- `docs/images/dawn_input.jpg`, `docs/images/dawn_output.jpg`
+- `docs/images/jigsaw_input.jpg`, `docs/images/jigsaw_output.jpg`
 
-Correa, Reingel F.  — **Presenter**
-** **
+### Acne Detection (Example)
+
+| Input | Output |
+| --- | --- |
+| ![Acne input](docs/images/acne_input.jpg) | ![Acne output](docs/images/acne_output.jpg) |
+
+### Crack Detection (Example)
+
+| Input | Output |
+| --- | --- |
+| ![Crack input](docs/images/crack_input.jpg) | ![Crack output](docs/images/crack_output.jpg) |
+
+### Dawn Enhancement (Example)
+
+| Input | Output |
+| --- | --- |
+| ![Dawn input](docs/images/dawn_input.jpg) | ![Dawn output](docs/images/dawn_output.jpg) |
+
+### Jigsaw Effect (Example)
+
+| Input | Output |
+| --- | --- |
+| ![Jigsaw input](docs/images/jigsaw_input.jpg) | ![Jigsaw output](docs/images/jigsaw_output.jpg) |
 
 
 
+---
 
+## Project Structure
 
+```
+Elective04/
+├── image_processing/           # Image processing modules
+│   ├── acne_detector.py
+│   ├── crack_detector.py
+│   ├── dawn.py
+│   └── jigsaw.py
+├── input/                     # Place raw images here
+├── output/                    # Processed images are saved here
+├── tests/                     # Pytest unit tests
+└── .github/workflows/         # GitHub Actions CI workflow(s)
+    └── ci.yml
+```
 
+---
 
+## Requirements
 
-  
+- **Python 3.9+**
+- **pip**
+- **Git**
 
+Tip: Using a virtual environment is strongly recommended.
 
+---
 
+## Installation & Setup
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/Elective04.git
+cd Elective04-main
+```
+
+### 2) Create and activate a virtual environment
+
+Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+Mac/Linux
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3) Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Running the Modules
+
+Run any module directly:
+
+```bash
+python image_processing/acne_detector.py
+python image_processing/crack_detector.py
+python image_processing/dawn.py
+python image_processing/jigsaw.py
+```
+
+Processed images will appear in:
+
+```
+output/
+```
+
+---
+
+## Testing
+
+This project uses **pytest** and includes unit tests for each module.
+
+Run tests locally:
+
+```bash
+pytest
+```
+
+Tests focus on verifying:
+- Successful execution of each module
+- Output generation in `output/`
+
+---
+
+## Continuous Integration (GitHub Actions)
+
+A GitHub Actions workflow automatically runs on:
+- Every push
+- Every pull request
+
+Typical pipeline steps include:
+1. Set up Python
+2. Install dependencies from `requirements.txt`
+3. Install/enable `pytest`
+4. Run unit tests
+5. Fail the build if any tests fail
+
+Workflow file location:
+
+```
+.github/workflows/ci.yml
+```
+
+---
+
+## Contributing
+
+### Development Setup
+
+1. Fork the repository
+2. Clone your fork:
+   ```bash
+   git clone https://github.com/<your-username>/Elective04.git
+   cd Elective04-main
+   ```
+3. Create and activate a virtual environment (see steps above)
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   pip install pytest
+   ```
+
+### Suggested Git Workflow
+
+- Create feature branches (e.g., `feature/<name>`)
+- Open Pull Requests for review before merging
+- Use consistent commit message prefixes such as:
+  - `feat:` add a feature
+  - `test:` add or update tests
+  - `fix:` bug fixes
+  - `ci:` CI/workflow changes
+  - `docs:` documentation updates
+
+Example:
+
+```bash
+git add .
+git commit -m "feat: add acne detection improvements"
+git push origin feature/acne-improvements
+```
+
+---
+
+## Team Notes (Optional)
+
+This project supports structured collaboration where team members contribute across:
+- Development
+- Testing
+- CI configuration
+- Documentation
+
+---
+
+## License
+
+Add your chosen license here (e.g., MIT, Apache-2.0), or include a `LICENSE` file.
+
+---
+
+## Notes
+
+- Ensure the `input/` folder contains supported image formats before running modules.
+- If you add new modules, include:
+  - A script in `image_processing/`
+  - A corresponding test in `tests/`
+  - Any dependency updates in `requirements.txt`
