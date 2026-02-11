@@ -10,7 +10,7 @@ This repository also demonstrates good engineering practices including unit test
 
 ## Features / Modules
 
-- **Acne Detection** — Detects and enhances acne-like features in facial images.
+- **Acne Detection** — Detects and counts acne on facial images.
 - **Crack Detection** — Identifies and highlights crack patterns in structural/surface images.
 - **Dawn Enhancement** — Applies edge detection and enhancement for improved visual clarity.
 - **Jigsaw Effect** — Produces a creative jigsaw-style transformation.
