@@ -36,25 +36,25 @@ Recommended file names (you can change them—just update the paths below):
 
 | Input | Output |
 | --- | --- |
-| ![Acne input](input/face3.png) | ![Acne output](docs/images/acne_output.jpg) |
+| ![Acne input](input/face3.png) | ![Acne output](output/face3_acne.png) |
 
 ### Crack Detection (Example)
 
 | Input | Output |
 | --- | --- |
-| ![Crack input](input/Crack.png) | ![Crack output](docs/images/crack_output.jpg) |
+| ![Crack input](input/Cracking.jpg) | ![Crack output](output/Cracking_edges.png) |
 
 ### Dawn Enhancement (Example)
 
 | Input | Output |
 | --- | --- |
-| ![Dawn input](docs/images/dawn_input.jpg) | ![Dawn output](docs/images/dawn_output.jpg) |
+| ![Dawn input](input/me.jpg) | ![Dawn output](output/me_dawn.png) |
 
 ### Jigsaw Effect (Example)
 
 | Input | Output |
 | --- | --- |
-| ![Jigsaw input](docs/images/jigsaw_input.jpg) | ![Jigsaw output](docs/images/jigsaw_output.jpg) |
+| ![Jigsaw input](input/me.jpg) | ![Jigsaw output](output/me_jigsaw.png) |
 
 
 
