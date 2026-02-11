@@ -42,7 +42,7 @@ Recommended file names (you can change them—just update the paths below):
 
 | Input | Output |
 | --- | --- |
-| ![Crack input](docs/images/crack_input.jpg) | ![Crack output](docs/images/crack_output.jpg) |
+| ![Crack input](input/Crack.png) | ![Crack output](docs/images/crack_output.jpg) |
 
 ### Dawn Enhancement (Example)
 
