@@ -36,7 +36,7 @@ Recommended file names (you can change them—just update the paths below):
 
 | Input | Output |
 | --- | --- |
-| ![Acne input](docs/images/acne_input.jpg) | ![Acne output](docs/images/acne_output.jpg) |
+| ![Acne input](input/face3.png) | ![Acne output](docs/images/acne_output.jpg) |
 
 ### Crack Detection (Example)
 
