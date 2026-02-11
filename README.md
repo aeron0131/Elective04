@@ -6,10 +6,6 @@ This repository also demonstrates good engineering practices including unit test
 
 ---
 
-## Authors
-
-Prepared by: **Reingel F. Correa** — TODA president
-
 ---
 
 ## Features / Modules
@@ -240,3 +236,17 @@ Add your chosen license here (e.g., MIT, Apache-2.0), or include a `LICENSE` fil
   - A script in `image_processing/`
   - A corresponding test in `tests/`
   - Any dependency updates in `requirements.txt`
+ 
+  # Authors
+
+Mangahas, Romualdo Jr. N.  — **Programmer**
+****
+
+Lorenzo, Aeron Abigail R.  — **DevOps**
+**  **
+
+Verueco, Joemar A.  — **QA**
+** **
+
+Correa, Reingel F.  — **Presenter**
+** **
