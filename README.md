@@ -239,14 +239,14 @@ Add your chosen license here (e.g., MIT, Apache-2.0), or include a `LICENSE` fil
  
   # Authors
 
-Mangahas, Romualdo Jr. N.  — **Programmer**
+Mangahas, Romualdo Jr. N.  — **Image Processing Lead**
 ****
 
-Lorenzo, Aeron Abigail R.  — **DevOps**
+Lorenzo, Aeron Abigail R.  — **DevOps Engineer**
 **  **
 
-Verueco, Joemar A.  — **QA**
+Verueco, Joemar A.  — **Tester**
 ** **
 
-Correa, Reingel F.  — **Presenter**
+Correa, Reingel F.  — **Documenter/Presenter**
 ** **
