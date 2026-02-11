@@ -1,4 +1,4 @@
-# Elective04 — Automated Image Processing with CI (GitHub Actions)
+# Elective04 — DevOps Image Processing with CI (GitHub Actions)
 
 A Python-based project for automated image processing and analysis using modular computer vision techniques. The system reads images from an `input/` folder, applies selected processing modules, and writes the results to an `output/` folder—no manual configuration required.
 
