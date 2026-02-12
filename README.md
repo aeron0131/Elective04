@@ -26,12 +26,6 @@ Each module:
 
 Add your sample images to `docs/images/` and the README will render them automatically on GitHub.
 
-Recommended file names (you can change them—just update the paths below):
-- `docs/images/acne_input.jpg`, `docs/images/acne_output.jpg`
-- `docs/images/crack_input.jpg`, `docs/images/crack_output.jpg`
-- `docs/images/dawn_input.jpg`, `docs/images/dawn_output.jpg`
-- `docs/images/jigsaw_input.jpg`, `docs/images/jigsaw_output.jpg`
-
 ### Acne Detection (Example)
 
 | Input | Output |
@@ -220,12 +214,6 @@ This project supports structured collaboration where team members contribute acr
 - Testing
 - CI configuration
 - Documentation
-
----
-
-## License
-
-Add your chosen license here (e.g., MIT, Apache-2.0), or include a `LICENSE` file.
 
 ---
 
