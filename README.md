@@ -6,8 +6,6 @@ This repository also demonstrates good engineering practices including unit test
 
 ---
 
----
-
 ## Features / Modules
 
 - **Acne Detection** — Detects and counts acne on facial images.
